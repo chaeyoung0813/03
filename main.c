@@ -4,16 +4,14 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	int input_int;
-	float input_float;
+	char text; //1byte
+	int i; //4byte
 	
-	printf("enteer a integer : ");
-	scanf("%d", &input_int);
+	printf("input a number : ");
+	scanf("%c", &text);
 	
-	printf("enter a float : ");
-	scanf("%f", &input_float);
-	
-	printf("ineger : %d, float : %f\n", input_int, input_float);
+	i = text-'0';
+	printf("the imput number is %i\n", i);
 	
 	return 0;
 }
